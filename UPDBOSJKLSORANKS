@@ -55,55 +55,25 @@ e1x1x1x1Message.BackgroundColor3 = Color3.new(0.392157, 0.392157, 0.392157)
 e1x1x1x1Message.Position = UDim2.new(0.0714285746, 0, 0.216000006, 0)
 e1x1x1x1Message.Size = UDim2.new(0, 79, 0, 31)
 e1x1x1x1Message.Font = Enum.Font.GothamBold
-e1x1x1x1Message.Text = "BossMessage"
+e1x1x1x1Message.Text = "TP"
 e1x1x1x1Message.TextColor3 = Color3.fromRGB(0, 0, 0)
 e1x1x1x1Message.TextScaled = true
 e1x1x1x1Message.TextSize = 14.000
 e1x1x1x1Message.TextWrapped = true
 e1x1x1x1Message.MouseButton1Down:connect(function()
 	while true do
-		wait(1)--set this to how much time between messages
-		msg = Instance.new ("Hint")
-		msg.Parent = game.Workspace
-		msg.Text = "Boss_JKLO: MUHAWHAWHAW! NOOBS! I HAVE RETURNED FOR MY REVENGE!"
-		wait(6)
-		msg:remove()
-		wait(3)
-		msg = Instance.new("Message")
-		msg.Parent = game.Workspace
-		msg.Text = "Boss_JKLO: NOW YOU WILL ALL PARISH IN MY FIRE OF DOOM!"
-		wait(6)
-		msg:remove()
-		wait(3)
-		msg = Instance.new("Message")
-		msg.Parent = game.Workspace
-		msg.Text = "Boss_JKLO: I WILL DESTROY YOU ALL! YOU ARE WORTHLESS!"
-		wait(6)
-		msg:remove()
-		wait(3)
-		msg = Instance.new("Message")
-		msg.Parent = game.Workspace
-		msg.Text = "Boss_JKLO: YOU WILL NOT LIVE THROUGH MY DEADLY ATTACKS!"
-		wait(6)
-		msg:remove()
-		wait(3)
-		msg = Instance.new("Message")
-		msg.Parent = game.Workspace
-		msg.Text = "Boss_JKLO: I MIGHT AS WELL CLONE YOU INTO BOTS!"
-		wait(6)
-		msg:remove()
-		wait(3)
-		msg = Instance.new("Message")
-		msg.Parent = game.Workspace
-		msg.Text = "Boss_JKLO: AND THEN THOSE BOTS WILL DESTROY ROBLOX! HAHAHAHAHA!"
-		wait(6)
-		msg:remove()
-		wait(3)
-		msg = Instance.new("Message")
-		msg.Parent = game.Workspace
-		msg.Text = "Boss_JKLO: YOU CAN'T STOP ME! THERES NOTHING YOU CAN DO!"
-		wait(6)
-		msg:remove()
+		local TeleportService = game:GetService("TeleportService")
+
+local Place = 4927041438
+
+local player = game.Players.LocalPlayer
+
+ 
+
+script.Parent.MouseButton1Click:connect(function()
+
+TeleportService:Teleport(Place, player)
+
 	end
 end)
 e1x1x1x1Music.Name = "e1x1x1x1Music"
