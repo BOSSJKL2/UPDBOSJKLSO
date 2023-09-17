@@ -2,10 +2,6 @@
 -- Version: 3.
 -- Instances:
 
-local TeleportService = game:GetService("TeleportService")
-
-local player = game.Players.LocalPlayer
-
 local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local Name = Instance.new("TextLabel")
@@ -35,7 +31,7 @@ Name.Parent = Frame
 Name.BackgroundColor3 = Color3.new(1, 1, 1)
 Name.Size = UDim2.new(0, 378, 0, 25)
 Name.Font = Enum.Font.GothamBold
-Name.Text = "UPDBOSJKLSO 1"
+Name.Text = "b00sjklo Gui"
 Name.TextColor3 = Color3.fromRGB(0, 0, 0)
 Name.TextScaled = true
 Name.TextSize = 14.000
@@ -47,7 +43,7 @@ Credits.BackgroundColor3 = Color3.new(1, 1, 1)
 Credits.Position = UDim2.new(0, 0, 0.912, 0)
 Credits.Size = UDim2.new(0, 378, 0, 22)
 Credits.Font = Enum.Font.GothamBold
-Credits.Text = "FE BY BOSSJKLO"
+Credits.Text = "Gui By Boss_JKLO"
 Credits.TextColor3 = Color3.fromRGB(0, 0, 0)
 Credits.TextScaled = true
 Credits.TextSize = 14.000
@@ -59,7 +55,7 @@ e1x1x1x1Message.BackgroundColor3 = Color3.new(0.392157, 0.392157, 0.392157)
 e1x1x1x1Message.Position = UDim2.new(0.0714285746, 0, 0.216000006, 0)
 e1x1x1x1Message.Size = UDim2.new(0, 79, 0, 31)
 e1x1x1x1Message.Font = Enum.Font.GothamBold
-e1x1x1x1Message.Text = "MSG
+e1x1x1x1Message.Text = "BossMessage"
 e1x1x1x1Message.TextColor3 = Color3.fromRGB(0, 0, 0)
 e1x1x1x1Message.TextScaled = true
 e1x1x1x1Message.TextSize = 14.000
@@ -69,9 +65,16 @@ e1x1x1x1Message.MouseButton1Down:connect(function()
 		wait(1)--set this to how much time between messages
 		msg = Instance.new ("Hint")
 		msg.Parent = game.Workspace
-		msg.Text = "Boss_JKLO: MUHAWHAWHAW! MONKEYS! 666 YOU ARE MONKEYS MUHAWHAWHAW!"
+		msg.Text = "Boss_JKLO: MUHAWHAWHAW! MONKEYS! I HAVE RETURNED FOR BULLY YOU!"
 		wait(6)
 		msg:remove()
+		wait(3)
+		msg = Instance.new("Message")
+		msg.Parent = game.Workspace
+		msg.Text = "Boss_JKLO: BYZ MONKEYS!"
+		wait(6)
+		msg:remove()
+		
 	end
 end)
 e1x1x1x1Music.Name = "e1x1x1x1Music"
@@ -80,7 +83,7 @@ e1x1x1x1Music.BackgroundColor3 = Color3.new(0.392157, 0.392157, 0.392157)
 e1x1x1x1Music.Position = UDim2.new(0.0714285746, 0, 0.436000019, 0)
 e1x1x1x1Music.Size = UDim2.new(0, 79, 0, 31)
 e1x1x1x1Music.Font = Enum.Font.GothamBold
-e1x1x1x1Music.Text = "HACKED WARNING"
+e1x1x1x1Music.Text = "DecalSpam"
 e1x1x1x1Music.TextColor3 = Color3.fromRGB(0, 0, 0)
 e1x1x1x1Music.TextScaled = true
 e1x1x1x1Music.TextSize = 14.000
@@ -89,7 +92,7 @@ e1x1x1x1Music.MouseButton1Down:connect(function()
 	--Made by Servano
 
 	local msg = Instance.new("Message",workspace)
-		msg.Text = "B0SS JKLO Is Destroying!!!"
+		msg.Text = "TEAM JKLO Is Destroying!!!"
 		wait(1)
 		msg:Destroy()
 		s = Instance.new("Sky")
