@@ -38,8 +38,8 @@ TextBox.BorderSizePixel = 0
 TextBox.Size = UDim2.new(0, 378, 0, 22)
 TextBox.Position = UDim2.new(0, 0, 0.912, 0)
 TextBox.Font = Enum.Font.ArialBold
-TextBox.Text = "4927041438"
-TextBox.PlaceholderText = "4927041438"
+TextBox.Text = "????"
+TextBox.PlaceholderText = "text here"
 TextBox.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextBox.TextSize = 15
 TextBox.TextScaled = true
@@ -64,15 +64,16 @@ e1x1x1x1Message.BackgroundColor3 = Color3.new(0.392157, 0.392157, 0.392157)
 e1x1x1x1Message.Position = UDim2.new(0.0714285746, 0, 0.216000006, 0)
 e1x1x1x1Message.Size = UDim2.new(0, 79, 0, 31)
 e1x1x1x1Message.Font = Enum.Font.GothamBold
-e1x1x1x1Message.Text = "TP"
+e1x1x1x1Message.Text = "MSG"
 e1x1x1x1Message.TextColor3 = Color3.fromRGB(0, 0, 0)
 e1x1x1x1Message.TextScaled = true
 e1x1x1x1Message.TextSize = 14.000
 e1x1x1x1Message.TextWrapped = true
 e1x1x1x1Message.MouseButton1Down:connect(function()
 	while true do
-
-TeleportService:Teleport(TextBox, player)()
+msg = Instance.new ("Hint")
+msg.Parent = game.Workspace
+msg.Text(TextBox.Text)()
 
 	end
 end)
