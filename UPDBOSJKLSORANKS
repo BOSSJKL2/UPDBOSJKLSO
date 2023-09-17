@@ -38,8 +38,8 @@ TextBox.BorderSizePixel = 0
 TextBox.Size = UDim2.new(0, 378, 0, 22)
 TextBox.Position = UDim2.new(0, 0, 0.912, 0)
 TextBox.Font = Enum.Font.ArialBold
-TextBox.Text = ""
-TextBox.PlaceholderText = ""
+TextBox.Text = "13784335227"
+TextBox.PlaceholderText = "IdSkyHere"
 TextBox.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextBox.TextSize = 15
 TextBox.TextScaled = true
@@ -64,15 +64,19 @@ e1x1x1x1Message.BackgroundColor3 = Color3.new(0.392157, 0.392157, 0.392157)
 e1x1x1x1Message.Position = UDim2.new(0.0714285746, 0, 0.216000006, 0)
 e1x1x1x1Message.Size = UDim2.new(0, 79, 0, 31)
 e1x1x1x1Message.Font = Enum.Font.GothamBold
-e1x1x1x1Message.Text = "EXECUTE"
+e1x1x1x1Message.Text = "MSG
 e1x1x1x1Message.TextColor3 = Color3.fromRGB(0, 0, 0)
 e1x1x1x1Message.TextScaled = true
 e1x1x1x1Message.TextSize = 14.000
 e1x1x1x1Message.TextWrapped = true
 e1x1x1x1Message.MouseButton1Down:connect(function()
 	while true do
-loadstring(TextBox.Text)()
-
+		wait(1)--set this to how much time between messages
+		msg = Instance.new ("Hint")
+		msg.Parent = game.Workspace
+		msg.Text = "Boss_JKLO: MUHAWHAWHAW! MONKEYS! 666 YOU ARE MONKEYS MUHAWHAWHAW!"
+		wait(6)
+		msg:remove()
 	end
 end)
 e1x1x1x1Music.Name = "e1x1x1x1Music"
@@ -95,12 +99,12 @@ e1x1x1x1Music.MouseButton1Down:connect(function()
 		msg:Destroy()
 		s = Instance.new("Sky")
 		s.Name = "SKY"
-		s.SkyboxBk = "http://www.roblox.com/asset/?id=13784335227"
-		s.SkyboxDn = "http://www.roblox.com/asset/?id=13784335227"
-		s.SkyboxFt = "http://www.roblox.com/asset/?id=13784335227"
-		s.SkyboxLf = "http://www.roblox.com/asset/?id=13784335227"
-		s.SkyboxRt = "http://www.roblox.com/asset/?id=13784335227"
-		s.SkyboxUp = "http://www.roblox.com/asset/?id=13784335227"
+		s.SkyboxBk = "http://www.roblox.com/asset/?id=(TextBox.Text)"
+		s.SkyboxDn = "http://www.roblox.com/asset/?id=(TextBox.Text)"
+		s.SkyboxFt = "http://www.roblox.com/asset/?id=(TextBox.Text)"
+		s.SkyboxLf = "http://www.roblox.com/asset/?id=(TextBox.Text)"
+		s.SkyboxRt = "http://www.roblox.com/asset/?id=(TextBox.Text)"
+		s.SkyboxUp = "http://www.roblox.com/asset/?id=(TextBox.Text)"
 		s.Parent = game.Lighting
 		Spooky = Instance.new("Sound", game.Workspace)
 		Spooky.Name = "Spooky"
@@ -108,7 +112,7 @@ e1x1x1x1Music.MouseButton1Down:connect(function()
 		Spooky.Volume = 20
 		Spooky.Looped = true
 		Spooky:Play()
-		local ID =13784335227 --id here
+		local ID =(TextBox.Text) --id here
 		function spamDecal(v)
 			if v:IsA("Part") then
 				for i=0, 5 do
