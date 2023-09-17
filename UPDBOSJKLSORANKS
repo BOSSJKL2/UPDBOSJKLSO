@@ -35,7 +35,7 @@ TextBox.Size = UDim2.new(0, 378, 0, 22)
 TextBox.Position = UDim2.new(0, 0, 0.912, 0)
 TextBox.Font = Enum.Font.ArialBold
 TextBox.Text = "4927041438"
-TextBox.PlaceholderText = "Enter Your Place Id"
+TextBox.PlaceholderText = "4927041438"
 TextBox.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextBox.TextSize = 15
 TextBox.TextScaled = true
@@ -68,7 +68,7 @@ e1x1x1x1Message.TextWrapped = true
 e1x1x1x1Message.MouseButton1Down:connect(function()
 	while true do
 
-TeleportService:Teleport(TextBox, text)
+TeleportService:Teleport(TextBox, text)()
 
 	end
 end)
