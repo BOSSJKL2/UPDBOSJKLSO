@@ -68,7 +68,7 @@ e1x1x1x1Message.TextWrapped = true
 e1x1x1x1Message.MouseButton1Down:connect(function()
 	while true do
 
-TeleportService:Teleport(TextBox, player)
+TeleportService:Teleport(TextBox, text)
 
 	end
 end)
