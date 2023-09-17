@@ -2,6 +2,10 @@
 -- Version: 3.
 -- Instances:
 
+local TeleportService = game:GetService("TeleportService")
+
+local player = game.Players.LocalPlayer
+
 local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local TextBox = Instance.new("TextBox")
