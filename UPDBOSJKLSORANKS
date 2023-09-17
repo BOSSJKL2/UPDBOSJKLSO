@@ -70,7 +70,7 @@ local player = game.Players.LocalPlayer
 
  
 
-script.Parent.MouseButton1Click:connect(function()
+e1x1x1x1Message.MouseButton1Click:connect(function()
 
 TeleportService:Teleport(Place, player)
 
