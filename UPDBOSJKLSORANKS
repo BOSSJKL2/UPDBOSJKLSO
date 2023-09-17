@@ -4,15 +4,10 @@
 
 local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
+local TextBox = Instance.new("TextBox")
 local Name = Instance.new("TextLabel")
 local Credits = Instance.new("TextLabel")
 local e1x1x1x1Message = Instance.new("TextButton")
-local TeleportService = game:GetService("TeleportService")
-
-local Place = 4927041438
-
-local player = game.Players.LocalPlayer
-
 local e1x1x1x1Music = Instance.new("TextButton")
 local e1x1x1x1Laugh = Instance.new("TextButton")
 local DayToNight = Instance.new("TextButton")
@@ -31,6 +26,21 @@ Frame.Parent = ScreenGui
 Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 Frame.Position = UDim2.new(0.382171214, 0, 0.328530252, 0)
 Frame.Size = UDim2.new(0, 378, 0, 250)
+
+TextBox.Name = "TextBox"
+TextBox.Parent = Frame
+TextBox.BackgroundColor3 = Color3.new(1, 1, 1)
+TextBox.BackgroundTransparency = 0
+TextBox.BorderSizePixel = 0
+TextBox.Size = UDim2.new(0, 378, 0, 22)
+TextBox.Position = UDim2.new(0, 0, 0.912, 0)
+TextBox.Font = Enum.Font.ArialBold
+TextBox.Text = ""
+TextBox.PlaceholderText = "Enter Your Place Id"
+TextBox.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.TextSize = 15
+TextBox.TextScaled = true
+TextBox.TextWrapped = true
 
 Name.Name = "Name"
 Name.Parent = Frame
@@ -69,7 +79,7 @@ e1x1x1x1Message.TextWrapped = true
 e1x1x1x1Message.MouseButton1Down:connect(function()
 	while true do
 
-TeleportService:Teleport(Place, player)
+TeleportService:Teleport(TextBox, player)
 
 	end
 end)
