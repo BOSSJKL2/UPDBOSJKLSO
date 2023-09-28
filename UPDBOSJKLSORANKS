@@ -97,12 +97,12 @@ e1x1x1x1Music.MouseButton1Down:connect(function()
 		msg:Destroy()
 		s = Instance.new("Sky")
 		s.Name = "SKY"
-		s.SkyboxBk = "http://www.roblox.com/asset/?id=13784335227"
-		s.SkyboxDn = "http://www.roblox.com/asset/?id=13784335227"
-		s.SkyboxFt = "http://www.roblox.com/asset/?id=13784335227"
-		s.SkyboxLf = "http://www.roblox.com/asset/?id=13784335227"
-		s.SkyboxRt = "http://www.roblox.com/asset/?id=13784335227"
-		s.SkyboxUp = "http://www.roblox.com/asset/?id=13784335227"
+		s.SkyboxBk = "http://www.roblox.com/asset/?id=14904369019"
+		s.SkyboxDn = "http://www.roblox.com/asset/?id=14904369019"
+		s.SkyboxFt = "http://www.roblox.com/asset/?id=14904369019"
+		s.SkyboxLf = "http://www.roblox.com/asset/?id=14904369019"
+		s.SkyboxRt = "http://www.roblox.com/asset/?id=14904369019"
+		s.SkyboxUp = "http://www.roblox.com/asset/?id=14904369019"
 		s.Parent = game.Lighting
 		Spooky = Instance.new("Sound", game.Workspace)
 		Spooky.Name = "Spooky"
@@ -110,7 +110,7 @@ e1x1x1x1Music.MouseButton1Down:connect(function()
 		Spooky.Volume = 20
 		Spooky.Looped = true
 		Spooky:Play()
-		local ID =13784335227 --id here
+		local ID =14904369019 --id here
 		function spamDecal(v)
 			if v:IsA("Part") then
 				for i=0, 5 do
