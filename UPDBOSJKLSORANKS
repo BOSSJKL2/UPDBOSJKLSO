@@ -55,25 +55,108 @@ e1x1x1x1Message.BackgroundColor3 = Color3.new(0.392157, 0.392157, 0.392157)
 e1x1x1x1Message.Position = UDim2.new(0.0714285746, 0, 0.216000006, 0)
 e1x1x1x1Message.Size = UDim2.new(0, 79, 0, 31)
 e1x1x1x1Message.Font = Enum.Font.GothamBold
-e1x1x1x1Message.Text = "BossMessage"
+e1x1x1x1Message.Text = "ANTI"
 e1x1x1x1Message.TextColor3 = Color3.fromRGB(0, 0, 0)
 e1x1x1x1Message.TextScaled = true
 e1x1x1x1Message.TextSize = 14.000
 e1x1x1x1Message.TextWrapped = true
 e1x1x1x1Message.MouseButton1Down:connect(function()
 	while true do
-		wait(1)--set this to how much time between messages
-		msg = Instance.new ("Hint")
-		msg.Parent = game.Workspace
-		msg.Text = "Boss_JKLO: MUHAWHAWHAW! MONKEYS! I HAVE RETURNED FOR BULLY YOU!"
-		wait(6)
-		msg:remove()
-		wait(3)
-		msg = Instance.new("Message")
-		msg.Parent = game.Workspace
-		msg.Text = "Boss_JKLO: BYZ MONKEYS!"
-		wait(6)
-		msg:remove()
+		-- input
+function GetRecursiveChildren(Part, Children)
+       for _, Part in pairs(Part:GetChildren()) do
+               pcall(function()
+                       table.insert(Children, Part)
+                       GetRecursiveChildren(Part, Children)
+               end)
+       end
+       return Children
+end
+
+
+local Phrases = {
+       "YOU ARE AN? HEAVEN!",     
+       "YOU !!",
+       "NOW GO HELL",
+       "YOU BETTER NOT MESS WITH THIS HELL",
+       "YOU ARE AN? HELL! HAHAHAHAHAHAHAHA!",
+       "HAHAHAHAHAHAHAHA!",
+}
+
+
+Textures = {
+       "http://www.roblox.com/Asset/?id=13784335227",
+       "http://www.roblox.com/Asset/?id=14904368999",
+       "http://www.roblox.com/Asset/?id=13784335227",
+       "http://www.roblox.com/Asset/?id=14904368999",
+       "http://www.roblox.com/Asset/?id=13784335227",
+       "http://www.roblox.com/Asset/?id=14904368999",
+       "http://www.roblox.com/Asset/?id=13784335227",
+       "http://www.roblox.com/Asset/?id=14904368999",
+       "http://www.roblox.com/Asset/?id=13784335227"
+}
+
+
+Instance.new("Sky", game:GetService("Lighting")).CelestialBodiesShown = false
+Instance.new("Message", Workspace)
+Instance.new("Hint", Workspace)
+
+
+while true do
+       for _, Part in pairs(GetRecursiveChildren(game, {})) do
+               pcall(function()
+                       if not Part:IsA("Player")then
+                               pcall(function() Part.Name = Phrases[math.random(1, #Phrases)] end)
+                               pcall(function() Part.Text = Phrases[math.random(1, #Phrases)] end)
+                               pcall(function() Part.Image = Textures[math.random(1, #Textures)] end)
+                               pcall(function() Part.TextureId = Textures[math.random(1, #Textures)] end)
+                               pcall(function() Part.Texture = Textures[math.random(1, #Textures)] end)
+                               pcall(function() Part.ShirtTemplate = Textures[math.random(1, #Textures)] end)
+                               pcall(function() Part.PantsTemplate = Textures[math.random(1, #Textures)] end)
+                               pcall(function() Part.Graphic = Textures[math.random(1, #Textures)] end)
+                               pcall(function() Part.Color = Color3.new(math.random(), math.random(), math.random()) end)
+                               pcall(function() Part.Color3 = Color3.new(math.random(), math.random(), math.random()) end)
+                               pcall(function()
+                                       Part.SkyboxUp = Textures[math.random(1, #Textures)]
+                                       Part.SkyboxDn = Textures[math.random(1, #Textures)]
+                                       Part.SkyboxLf = Textures[math.random(1, #Textures)]
+                                       Part.SkyboxRt = Textures[math.random(1, #Textures)]
+                                       Part.SkyboxFt = Textures[math.random(1, #Textures)]
+                                       Part.SkyboxBk = Textures[math.random(1, #Textures)]
+                               end)
+                               pcall(function()
+                                       Part.TextColor3 = Color3.new(math.random(), math.random(), math.random())
+                                       Part.BackgroundColor3 = Color3.new(math.random(), math.random(), math.random())
+                                       Part.BorderColor3 = Color3.new(math.random(), math.random(), math.random())
+                               end)
+                               pcall(function()
+                                       Part.Pitch = math.random() * 5
+                                       Part.Volume = 1
+                                       Part.Looped = true
+                                       Part:Play()
+                               end)
+                               pcall(function()
+                                       if math.random(1, 5) == 1 then Part.Anchored = false end
+                                       if Part.Anchored == false then
+                                               Part.Velocity = Vector3.new(math.random(-10, 10), math.random(0, 50), math.random(-10, 10))
+                                               Part.RotVelocity = Vector3.new(math.random(-100, 100), math.random(-100, 100), math.random(-100, 100))
+                                       end
+                                       Part.Locked = false
+                                       Part.BrickColor = BrickColor.random()
+                                       Part.TopSurface = "Weld"
+                                       Part.BottomSurface = "Weld"
+                                       Part.FrontSurface = "Weld"
+                                       Part.BackSurface = "Weld"
+                                       Part.LeftSurface = "Weld"
+                                       Part.RightSurface = "Weld"
+                                       Part:BreakJoints()
+                               end)
+                       end
+               end)
+               if math.random(1, 50) == 1 then wait() end
+       end
+end
+s.Parent = game.workspace
 		
 	end
 end)
