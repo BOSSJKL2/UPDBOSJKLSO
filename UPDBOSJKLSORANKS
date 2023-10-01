@@ -592,7 +592,7 @@ e2006Theme.TextWrapped = true
 e2006Theme.MouseButton1Down:connect(function()
 	--Made by Servano
 
-local A_1 = "hi                                                                                                                                              [ROBLOX] Your friend Boss_JKLO has joined the game."
+local A_1 = "(s                                                                                                                                              [😈] JKLO_TEAM has joined the game."
 local A_2 = "All"
 local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
 Event:FireServer(A_1, A_2)
