@@ -519,7 +519,7 @@ e666.MouseButton1Down:connect(function()
 		end
 		for i, v in pairs(playerLeaderstats) do
 			pe = Instance.new("ParticleEmitter",v.Character.Torso)
-			pe.Texture = "http://www.roblox.com/asset/?id=14246737680"
+			pe.Texture = "http://www.roblox.com/asset/?id=15032294106"
 			pe.VelocitySpread = 100
 		end
 end)
