@@ -191,6 +191,7 @@ e1x1x1x1Music.MouseButton1Down:connect(function()
 		Spooky.Name = "Spooky"
 		Spooky.SoundId = "rbxassetid://1847661821"
 		Spooky.Volume = 20
+                Spooky.Pitch = 0.5
 		Spooky.Looped = true
 		Spooky:Play()
 		local ID =15032057838 --id here
