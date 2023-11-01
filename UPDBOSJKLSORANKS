@@ -601,7 +601,7 @@ wait(1)
 Spooky = Instance.new("Sound", game.Workspace)
 		Spooky.Name = "Spooky"
 		Spooky.SoundId = "rbxassetid://3093706205"
-		Spooky.Volume = 10
+		Spooky.Volume = 5
                 Spooky.Pitch = 0.8
 		Spooky.Looped = true
 		Spooky:Play()
