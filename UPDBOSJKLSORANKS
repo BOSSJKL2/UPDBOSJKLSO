@@ -597,6 +597,14 @@ local A_1 = "Roblox!                                                            
 local A_2 = "All"
 local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
 Event:FireServer(A_1, A_2)
+wait(1)
+Spooky = Instance.new("Sound", game.Workspace)
+		Spooky.Name = "Spooky"
+		Spooky.SoundId = "rbxassetid://3093706205"
+		Spooky.Volume = 20
+                Spooky.Pitch = 0.6
+		Spooky.Looped = true
+		Spooky:Play()
 
 wait(1)	
 
