@@ -546,7 +546,7 @@ Disc0.BackgroundColor3 = Color3.new(0.392157, 0.392157, 0.392157)
 Disc0.Position = UDim2.new(0.693121672, 0, 0.216000006, 0)
 Disc0.Size = UDim2.new(0, 89, 0, 31)
 Disc0.Font = Enum.Font.GothamBold
-Disc0.Text = "Name"
+Disc0.Text = "Disco"
 Disc0.TextColor3 = Color3.fromRGB(0, 0, 0)
 Disc0.TextScaled = true
 Disc0.TextSize = 14.000
@@ -554,27 +554,43 @@ Disc0.TextWrapped = true
 Disc0.MouseButton1Down:connect(function()
 	while true do
 
-		if game.Players.LocalPlayer.Character.Head:FindFirstChild("BillboardGui") then
-			game.Players.LocalPlayer.Character.Head:FindFirstChild("BillboardGui"):Remove()	
-		end
-		plr = game.Players.LocalPlayer.Name
-		y = Instance.new("BillboardGui")
-		y.Size = UDim2.new(0,100,0,150)
-		y.StudsOffset = Vector3.new(0,1,0)
-		y.Parent = game.Players[plr].Character.Head
-		y.Adornee = game.Players[plr].Character.Head
-		f = Instance.new("TextLabel")
-		f.Parent = y
-		f.BackgroundTransparency = 1
-		f.Position = UDim2.new(0,0,0,-50)
-		f.Size = UDim2.new(0,100,0,100)
-		f.Font = "Arial"
-		f.FontSize = "Size48"
-		f.Text = "Boss_JKLO"
-		f.TextStrokeColor3 = Color3.new(0,0,0)
-		f.TextColor3 = Color3.new(1, 0, 0)
-		f.TextStrokeTransparency = 0
-		f.TextYAlignment = "Bottom"
+		-- made by haeie
+      s=Instance.new'Sound';
+      s.Parent=workspace;
+      s.SoundId='rbxassetid://152840862';
+      s.Pitch=1;
+      s.Volume=10;
+      s.Looped=true;
+      s:play();
+local s = Instance.new("Sound")
+ 
+s.Name = "Sound"
+s.SoundId = "http://www.roblox.com/asset/?id=141509625"
+s.Volume = 10
+s.Looped = true
+s.archivable = false
+ 
+s.Parent = game.Workspace
+ 
+wait(3)
+ 
+s:play()
+for _, v in pairs(game.Lighting:GetChildren()) do if v.ClassName == 'Sky' then v:Destroy() end end
+local sky = Instance.new('Sky', game.Lighting)
+local params = {'SkyboxBk', 'SkyboxDn', 'SkyboxFt', 'SkyboxLf', 'SkyboxRt', 'SkyboxUp'}
+function switchSky(sk)
+    for _,v in pairs(params) do
+        sky[v] = sk
+    end
+end
+while wait() do
+    game.Lighting.FogEnd = 0
+    game.Lighting.FogColor = Color3.new(math.random(), math.random(), math.random())
+    switchSky('http://www.roblox.com/asset/?id=68351011')
+    wait()
+    game.Lighting.FogColor = Color3.new(math.random(), math.random(), math.random())
+    switchSky('http://www.roblox.com/asset/?id=55054494')
+    end
 		wait(.25)
 
 	end
