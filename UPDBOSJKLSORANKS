@@ -514,15 +514,17 @@ e666.TextScaled = true
 e666.TextSize = 14.000
 e666.TextWrapped = true
 e666.MouseButton1Down:connect(function()
+
 	local playerLeaderstats = {}
-		for i, v in pairs(game.Players:GetChildren()) do
-			table.insert(playerLeaderstats, v)
-		end
-		for i, v in pairs(playerLeaderstats) do
-			pe = Instance.new("ParticleEmitter",v.Character.Torso)
-			pe.Texture = "http://www.roblox.com/asset/?id=15032294106"
-			pe.VelocitySpread = 100
-		end
+for i, v in pairs(game.Players:GetChildren()) do
+table.insert(playerLeaderstats, v)
+end
+for i, v in pairs(playerLeaderstats) do
+pe = Instance.new("ParticleEmitter",v.Character.Torso)
+pe.Texture = "http://www.roblox.com/asset/?id=15032294106"
+pe.VelocitySpread = 50
+end
+
 end)
 EpicSaxGuy.Name = "EpicSaxGuy"
 EpicSaxGuy.Parent = Frame
