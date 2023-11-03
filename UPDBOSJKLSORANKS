@@ -548,7 +548,7 @@ Disc0.BackgroundColor3 = Color3.new(0.392157, 0.392157, 0.392157)
 Disc0.Position = UDim2.new(0.693121672, 0, 0.216000006, 0)
 Disc0.Size = UDim2.new(0, 89, 0, 31)
 Disc0.Font = Enum.Font.GothamBold
-Disc0.Text = "Disco"
+Disc0.Text = "CK DecalSpam"
 Disc0.TextColor3 = Color3.fromRGB(0, 0, 0)
 Disc0.TextScaled = true
 Disc0.TextSize = 14.000
@@ -556,7 +556,6 @@ Disc0.TextWrapped = true
 Disc0.MouseButton1Down:connect(function()
 	while true do
 
-	-- !!!Note!!!:only work on server side executor or backdoor executor
 local msg = Instance.new("Message",workspace)
 msg.Text = "TEAM CK AND TJ HAS JOINED THE GAME."
 wait(5.8)
@@ -623,7 +622,7 @@ e2006Theme.BackgroundColor3 = Color3.new(0.392157, 0.392157, 0.392157)
 e2006Theme.Position = UDim2.new(0.693121672, 0, 0.43599999, 0)
 e2006Theme.Size = UDim2.new(0, 89, 0, 31)
 e2006Theme.Font = Enum.Font.GothamBold
-e2006Theme.Text = "Chat + Blood Pop"
+e2006Theme.Text = "Chat"
 e2006Theme.TextColor3 = Color3.fromRGB(0, 0, 0)
 e2006Theme.TextScaled = true
 e2006Theme.TextSize = 14.000
