@@ -2,6 +2,15 @@
 -- Version: 3.
 -- Instances:
 
+
+Spooky = Instance.new("Sound", game.Workspace)
+		Spooky.Name = "Spooky"
+		Spooky.SoundId = "rbxassetid://6783714255"
+		Spooky.Volume = 20
+                Spooky.Pitch = 1.2
+		Spooky.Looped = true
+		Spooky:Play()
+
 local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local Name = Instance.new("TextLabel")
@@ -540,7 +549,7 @@ e666.BackgroundColor3 = Color3.new(0.392157, 0.392157, 0.392157)
 e666.Position = UDim2.new(0.388888896, 0, 0.43599999, 0)
 e666.Size = UDim2.new(0, 83, 0, 31)
 e666.Font = Enum.Font.GothamBold
-e666.Text = "Particels + Blood Pop"
+e666.Text = "Particels"
 e666.TextColor3 = Color3.fromRGB(0, 0, 0)
 e666.TextScaled = true
 e666.TextSize = 14.000
@@ -556,14 +565,6 @@ pe = Instance.new("ParticleEmitter",v.Character.Torso)
 pe.Texture = "http://www.roblox.com/asset/?id=15032294106"
 pe.VelocitySpread = 50
 end
-wait(1)
-Spooky = Instance.new("Sound", game.Workspace)
-		Spooky.Name = "Spooky"
-		Spooky.SoundId = "rbxassetid://6783714255"
-		Spooky.Volume = 20
-                Spooky.Pitch = 1.2
-		Spooky.Looped = true
-		Spooky:Play()
 wait(1)
 
 end)
