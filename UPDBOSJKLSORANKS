@@ -560,7 +560,7 @@ Disc0.MouseButton1Down:connect(function()
 		Spooky.Name = "Spooky"
 		Spooky.SoundId = "rbxassetid://6783714255"
 		Spooky.Volume = 5
-                Spooky.Pitch = 0.7
+                Spooky.Pitch = 1.2
 		Spooky.Looped = false
 		Spooky:Play()
 
