@@ -603,7 +603,7 @@ loadstring(game:HttpGet("https://pastebin.com/raw/aMtQRfDA",true))()
 end)
 e2006Theme.Name = "e2006Theme"
 e2006Theme.Parent = Frame
-e2006Theme.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+e2006Theme.BackgroundColor3 = Color3.new(0.392157, 0.392157, 0.392157)
 e2006Theme.Position = UDim2.new(0.693121672, 0, 0.43599999, 0)
 e2006Theme.Size = UDim2.new(0, 89, 0, 31)
 e2006Theme.Font = Enum.Font.GothamBold
