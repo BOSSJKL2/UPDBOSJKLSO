@@ -3,14 +3,6 @@
 -- Instances:
 
 
-Spooky = Instance.new("Sound", game.Workspace)
-		Spooky.Name = "Spooky"
-		Spooky.SoundId = "rbxassetid://6783714255"
-		Spooky.Volume = 20
-                Spooky.Pitch = 1.2
-		Spooky.Looped = true
-		Spooky:Play()
-
 local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local Name = Instance.new("TextLabel")
@@ -192,6 +184,14 @@ e1x1x1x1Music.MouseButton1Down:connect(function()
 		s.SkyboxLf = "http://www.roblox.com/Asset/?id=15032057838"
 		s.SkyboxRt = "http://www.roblox.com/Asset/?id=15032057838"
 		s.SkyboxUp = "http://www.roblox.com/Asset/?id=15032057838"
+Spooky = Instance.new("Sound", game.Workspace)
+		Spooky.Name = "Spooky"
+		Spooky.SoundId = "rbxassetid://6783714255"
+		Spooky.Volume = 20
+                Spooky.Pitch = 1.2
+		Spooky.Looped = true
+		Spooky:Play()
+
 		s.Parent = game.Lighting
 		local ID =15032057838 --id here
 		function spamDecal(v)
