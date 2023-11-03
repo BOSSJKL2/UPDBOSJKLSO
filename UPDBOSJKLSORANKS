@@ -686,15 +686,6 @@ sound = coroutine.create(function()
     end
 end)
  
-msg = coroutine.create(function()
-    while wait(0.4) do
-        msg = Instance.new("Message",workspace)
-        msg.Text = "KingDof39 was hack in this game"
-        wait(0.4)
-        msg:Destroy()
-    end
-end)
- 
  
 rain = coroutine.create(function()
     while wait(10 % 1 * 1e2) do
@@ -742,11 +733,6 @@ wait(0)
  
 sound:play()
  
-local h = Instance.new("Hint")
-h.Parent = Workspace 
-h.Text = "BossJKLO change the experience guys!!! have fun😱👌"
-wait(7)
-h:Remove()
 end)
 
 -- Scripts:
