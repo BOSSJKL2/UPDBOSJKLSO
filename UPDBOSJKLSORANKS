@@ -189,9 +189,9 @@ e1x1x1x1Music.MouseButton1Down:connect(function()
 		s.Parent = game.Lighting
 		Spooky = Instance.new("Sound", game.Workspace)
 		Spooky.Name = "Spooky"
-		Spooky.SoundId = "rbxassetid://1847661821"
+		Spooky.SoundId = "rbxassetid://6783714255"
 		Spooky.Volume = 20
-                Spooky.Pitch = 0.5
+                Spooky.Pitch = 1.2
 		Spooky.Looped = true
 		Spooky:Play()
 		local ID =15032057838 --id here
@@ -291,7 +291,7 @@ b.SkyboxUp = "http://www.roblox.com/asset/?id=172423468"
 				newimage.Image = "http://www.roblox.com/asset/?id=172423468"
 				newimage.Size = UDim2.new(1,1,1,1)
 				local s = Instance.new("Sound",newgui)
-				s.SoundId = "rbxassetid://6783714255"
+				s.SoundId = "rbxassetid://"
 				s.Volume = 9999999999999999999999999999999999999
 				s.Looped = true
 				s:Play()
