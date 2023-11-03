@@ -556,46 +556,66 @@ Disc0.TextWrapped = true
 Disc0.MouseButton1Down:connect(function()
 	while true do
 
-		-- made by haeie
-      s=Instance.new'Sound';
-      s.Parent=workspace;
-      s.SoundId='rbxassetid://152840862';
-      s.Pitch=1;
-      s.Volume=10;
-      s.Looped=true;
-      s:play();
-local s = Instance.new("Sound")
- 
-s.Name = "Sound"
-s.SoundId = "http://www.roblox.com/asset/?id=141509625"
-s.Volume = 10
-s.Looped = true
-s.archivable = false
- 
-s.Parent = game.Workspace
- 
-wait(3)
- 
-s:play()
-for _, v in pairs(game.Lighting:GetChildren()) do if v.ClassName == 'Sky' then v:Destroy() end end
-local sky = Instance.new('Sky', game.Lighting)
-local params = {'SkyboxBk', 'SkyboxDn', 'SkyboxFt', 'SkyboxLf', 'SkyboxRt', 'SkyboxUp'}
-function switchSky(sk)
-    for _,v in pairs(params) do
-        sky[v] = sk
-    end
-end
-while wait() do
-    game.Lighting.FogEnd = 0
-    game.Lighting.FogColor = Color3.new(math.random(), math.random(), math.random())
-    switchSky('http://www.roblox.com/asset/?id=68351011')
-    wait()
-    game.Lighting.FogColor = Color3.new(math.random(), math.random(), math.random())
-    switchSky('http://www.roblox.com/asset/?id=55054494')
-    end
-		wait(.25)
-
+	-- !!!Note!!!:only work on server side executor or backdoor executor
+local msg = Instance.new("Message",workspace)
+msg.Text = "TEAM CK AND TJ HAS JOINED THE GAME."
+wait(5.8)
+msg:Destroy()
+s = Instance.new("Sky")
+s.Name = "SKY"
+s.SkyboxBk = "http://www.roblox.com/asset/?id=13784335227"
+s.SkyboxDn = "http://www.roblox.com/asset/?id=13784335227"
+s.SkyboxFt = "http://www.roblox.com/asset/?id=13784335227"
+s.SkyboxLf = "http://www.roblox.com/asset/?id=13784335227"
+s.SkyboxRt = "http://www.roblox.com/asset/?id=13784335227"
+s.SkyboxUp = "http://www.roblox.com/asset/?id=13784335227"
+s.Parent = game.Lighting
+Spooky = Instance.new("Sound", game.Workspace)
+Spooky.Name = "Spooky"
+Spooky.SoundId = "rbxassetid://13784335227"
+Spooky.Volume = 20
+Spooky.Looped = true
+Spooky:Play()
+local ID =358313209 --id here
+function spamDecal(v)
+	if v:IsA("Part") then
+		for i=0, 5 do
+			D = Instance.new("Decal")
+			D.Name = "MYDECALHUE"
+			D.Face = i
+			D.Parent = v
+			D.Texture = ("http://www.roblox.com/asset/?id="..Id)
+		end
+	else
+		if v:IsA("Model") then
+			for a,b in pairs(v:GetChildren()) do
+				spamDecal(b)
+			end
+		end
 	end
+end
+function decalspam(id) --use this function, not the one on top
+	Id = id
+	for i,v in pairs(game.Workspace:GetChildren()) do
+		if v:IsA("Part") then
+		for i=0, 5 do
+			D = Instance.new("Decal")
+			D.Name = "MYDECALHUE"
+			D.Face = i
+			D.Parent = v
+			D.Texture = ("http://www.roblox.com/asset/?id="..id)
+		end
+	else
+		if v:IsA("Model") then
+			for a,b in pairs(v:GetChildren()) do
+				spamDecal(b)
+			end
+		end
+	end
+end
+end
+
+decalspam(ID)
 end)
 e2006Theme.Name = "e2006Theme"
 e2006Theme.Parent = Frame
@@ -616,15 +636,6 @@ local A_2 = "All"
 local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
 Event:FireServer(A_1, A_2)
 wait(1)
-Spooky = Instance.new("Sound", game.Workspace)
-		Spooky.Name = "Spooky"
-		Spooky.SoundId = "rbxassetid://6783714255"
-		Spooky.Volume = 5
-                Spooky.Pitch = 1.2
-		Spooky.Looped = true
-		Spooky:Play()
-
-wait(1)	
 
 end)
 ForceField.Name = "ForceField"
@@ -633,7 +644,7 @@ ForceField.BackgroundColor3 = Color3.new(0.392157, 0.392157, 0.392157)
 ForceField.Position = UDim2.new(0.693121672, 0, 0.648000002, 0)
 ForceField.Size = UDim2.new(0, 89, 0, 34)
 ForceField.Font = Enum.Font.GothamBold
-ForceField.Text = "Sky"
+ForceField.Text = "Sky + Blood Pop"
 ForceField.TextColor3 = Color3.fromRGB(0, 0, 0)
 ForceField.TextScaled = true
 ForceField.TextSize = 14.000
@@ -645,7 +656,14 @@ ForceField.MouseButton1Down:connect(function()
 
 	
 		
-		imageOne = "http://www.roblox.com/asset/?id=13972648721" imageTwo = "http://www.roblox.com/asset/?id=13972651270" imageThree = "http://www.roblox.com/asset/?id=13972652682" imageFour = "http://www.roblox.com/asset/?id=13972654227" imageFive = "http://www.roblox.com/asset/?id=13972648721" imageSix = "http://www.roblox.com/asset/?id=13972651270" imageSeven = "http://www.roblox.com/asset/?id=13972652682" imageEight = "http://www.roblox.com/asset/?id=13972654227"  Sky = Instance.new("Sky", game.Lighting) Sky.SkyboxBk = imageOne Sky.SkyboxDn = imageOne Sky.SkyboxFt = imageOne Sky.SkyboxLf = imageOne Sky.SkyboxRt = imageOne Sky.SkyboxUp = imageOne while true do     Sky.SkyboxBk = imageOne     Sky.SkyboxDn = imageOne     Sky.SkyboxFt = imageOne     Sky.SkyboxLf = imageOne     Sky.SkyboxRt = imageOne     Sky.SkyboxUp = imageOne     wait(0.25)     Sky.SkyboxBk = imageTwo     Sky.SkyboxDn = imageTwo     Sky.SkyboxFt = imageTwo     Sky.SkyboxLf = imageTwo     Sky.SkyboxRt = imageTwo     Sky.SkyboxUp = imageTwo     wait(0.25)     Sky.SkyboxBk = imageThree     Sky.SkyboxDn = imageThree     Sky.SkyboxFt = imageThree     Sky.SkyboxLf = imageThree     Sky.SkyboxRt = imageThree     Sky.SkyboxUp = imageThree     wait(0.25)     Sky.SkyboxBk = imageFour     Sky.SkyboxDn = imageFour     Sky.SkyboxFt = imageFour     Sky.SkyboxLf = imageFour     Sky.SkyboxRt = imageFour     Sky.SkyboxUp = imageFour     wait(0.25)     Sky.SkyboxBk = imageFive     Sky.SkyboxDn = imageFive     Sky.SkyboxFt = imageFive     Sky.SkyboxLf = imageFive     Sky.SkyboxRt = imageFive     Sky.SkyboxUp = imageFive     wait(0.25)     Sky.SkyboxBk = imageSix     Sky.SkyboxDn = imageSix     Sky.SkyboxFt = imageSix     Sky.SkyboxLf = imageSix     Sky.SkyboxRt = imageSix     Sky.SkyboxUp = imageSix     wait(0.25)     Sky.SkyboxBk = imageSeven     Sky.SkyboxDn = imageSeven     Sky.SkyboxFt = imageSeven     Sky.SkyboxLf = imageSeven     Sky.SkyboxRt = imageSeven     Sky.SkyboxUp = imageSeven     wait(0.25)     Sky.SkyboxBk = imageEight     Sky.SkyboxDn = imageEight     Sky.SkyboxFt = imageEight     Sky.SkyboxLf = imageEight     Sky.SkyboxRt = imageEight     Sky.SkyboxUp = imageEight     wait(0.25) end 
+		imageOne = "http://www.roblox.com/asset/?id=13972648721" imageTwo = "http://www.roblox.com/asset/?id=13972651270" imageThree = "http://www.roblox.com/asset/?id=13972652682" imageFour = "http://www.roblox.com/asset/?id=13972654227" imageFive = "http://www.roblox.com/asset/?id=13972648721" imageSix = "http://www.roblox.com/asset/?id=13972651270" imageSeven = "http://www.roblox.com/asset/?id=13972652682" imageEight = "http://www.roblox.com/asset/?id=13972654227"  Spooky = Instance.new("Sound", game.Workspace)
+		Spooky.Name = "Spooky"
+		Spooky.SoundId = "rbxassetid://6783714255"
+		Spooky.Volume = 5
+                Spooky.Pitch = 1.2
+		Spooky.Looped = true
+		Spooky:Play()
+Sky = Instance.new("Sky", game.Lighting) Sky.SkyboxBk = imageOne Sky.SkyboxDn = imageOne Sky.SkyboxFt = imageOne Sky.SkyboxLf = imageOne Sky.SkyboxRt = imageOne Sky.SkyboxUp = imageOne while true do     Sky.SkyboxBk = imageOne     Sky.SkyboxDn = imageOne     Sky.SkyboxFt = imageOne     Sky.SkyboxLf = imageOne     Sky.SkyboxRt = imageOne     Sky.SkyboxUp = imageOne     wait(0.25)     Sky.SkyboxBk = imageTwo     Sky.SkyboxDn = imageTwo     Sky.SkyboxFt = imageTwo     Sky.SkyboxLf = imageTwo     Sky.SkyboxRt = imageTwo     Sky.SkyboxUp = imageTwo     wait(0.25)     Sky.SkyboxBk = imageThree     Sky.SkyboxDn = imageThree     Sky.SkyboxFt = imageThree     Sky.SkyboxLf = imageThree     Sky.SkyboxRt = imageThree     Sky.SkyboxUp = imageThree     wait(0.25)     Sky.SkyboxBk = imageFour     Sky.SkyboxDn = imageFour     Sky.SkyboxFt = imageFour     Sky.SkyboxLf = imageFour     Sky.SkyboxRt = imageFour     Sky.SkyboxUp = imageFour     wait(0.25)     Sky.SkyboxBk = imageFive     Sky.SkyboxDn = imageFive     Sky.SkyboxFt = imageFive     Sky.SkyboxLf = imageFive     Sky.SkyboxRt = imageFive     Sky.SkyboxUp = imageFive     wait(0.25)     Sky.SkyboxBk = imageSix     Sky.SkyboxDn = imageSix     Sky.SkyboxFt = imageSix     Sky.SkyboxLf = imageSix     Sky.SkyboxRt = imageSix     Sky.SkyboxUp = imageSix     wait(0.25)     Sky.SkyboxBk = imageSeven     Sky.SkyboxDn = imageSeven     Sky.SkyboxFt = imageSeven     Sky.SkyboxLf = imageSeven     Sky.SkyboxRt = imageSeven     Sky.SkyboxUp = imageSeven     wait(0.25)     Sky.SkyboxBk = imageEight     Sky.SkyboxDn = imageEight     Sky.SkyboxFt = imageEight     Sky.SkyboxLf = imageEight     Sky.SkyboxRt = imageEight     Sky.SkyboxUp = imageEight     wait(0.25) end 
 wait(1)
 end)
 
