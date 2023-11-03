@@ -554,7 +554,7 @@ Disc0.TextScaled = true
 Disc0.TextSize = 14.000
 Disc0.TextWrapped = true
 Disc0.MouseButton1Down:connect(function()
-	while true do
+     --made by me
 
 local msg = Instance.new("Message",workspace)
 		msg.Text = "TEAM CK AND TJ Has Destroying!!!"
