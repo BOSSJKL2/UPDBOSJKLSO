@@ -564,9 +564,7 @@ for i, v in pairs(playerLeaderstats) do
 pe = Instance.new("ParticleEmitter",v.Character.Torso)
 pe.Texture = "http://www.roblox.com/asset/?id=15032294106"
 pe.VelocitySpread = 50
-end
 wait(1)
-
 
 end)
 EpicSaxGuy.Name = "EpicSaxGuy"
