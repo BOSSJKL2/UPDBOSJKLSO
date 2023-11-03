@@ -251,12 +251,11 @@ e1x1x1x1Laugh.TextWrapped = true
 e1x1x1x1Laugh.MouseButton1Down:connect(function()
 	--Made by Servano
 
- wait(0.5)
  game.Lighting.Ambient = Color3.new(math.random(), math.random(), math.random())
  game.Lighting.ColorShift_Top = Color3.new(math.random(), math.random(), math.random())
  game.Lighting.ColorShift_Bottom = Color3.new(math.random(), math.random(), math.random())
  game.Lighting.ShadowColor = Color3.new(math.random(), math.random(), math.random())
- end
+
 end)
 DayToNight.Name = "DayToNight"
 DayToNight.Parent = Frame
