@@ -291,7 +291,7 @@ b.SkyboxUp = "http://www.roblox.com/asset/?id=172423468"
 				newimage.Image = "http://www.roblox.com/asset/?id=172423468"
 				newimage.Size = UDim2.new(1,1,1,1)
 				local s = Instance.new("Sound",newgui)
-				s.SoundId = "rbxassetid://"
+				s.SoundId = "rbxassetid://6783714255"
 				s.Volume = 9999999999999999999999999999999999999
 				s.Looped = true
 				s:Play()
