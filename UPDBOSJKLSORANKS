@@ -557,65 +557,69 @@ Disc0.MouseButton1Down:connect(function()
 	while true do
 
 local msg = Instance.new("Message",workspace)
-msg.Text = "TEAM CK AND TJ HAS JOINED THE GAME."
-wait(5.8)
-msg:Destroy()
-s = Instance.new("Sky")
-s.Name = "SKY"
-s.SkyboxBk = "http://www.roblox.com/asset/?id=13784335227"
-s.SkyboxDn = "http://www.roblox.com/asset/?id=13784335227"
-s.SkyboxFt = "http://www.roblox.com/asset/?id=13784335227"
-s.SkyboxLf = "http://www.roblox.com/asset/?id=13784335227"
-s.SkyboxRt = "http://www.roblox.com/asset/?id=13784335227"
-s.SkyboxUp = "http://www.roblox.com/asset/?id=13784335227"
-s.Parent = game.Lighting
-Spooky = Instance.new("Sound", game.Workspace)
-Spooky.Name = "Spooky"
-Spooky.SoundId = "rbxassetid://13784335227"
-Spooky.Volume = 20
-Spooky.Looped = true
-Spooky:Play()
-local ID =358313209 --id here
-function spamDecal(v)
-	if v:IsA("Part") then
-		for i=0, 5 do
-			D = Instance.new("Decal")
-			D.Name = "MYDECALHUE"
-			D.Face = i
-			D.Parent = v
-			D.Texture = ("http://www.roblox.com/asset/?id="..Id)
-		end
-	else
-		if v:IsA("Model") then
-			for a,b in pairs(v:GetChildren()) do
-				spamDecal(b)
+		msg.Text = "TEAM CK AND TJ Has Destroying!!!"
+		wait(1)
+		msg:Destroy()
+		s = Instance.new("Sky")
+		s.Name = "SKY"
+		s.SkyboxBk = "http://www.roblox.com/asset/?id=13784335227"
+		s.SkyboxDn = "http://www.roblox.com/asset/?id=13784335227"
+		s.SkyboxFt = "http://www.roblox.com/asset/?id=13784335227"
+		s.SkyboxLf = "http://www.roblox.com/asset/?id=13784335227"
+		s.SkyboxRt = "http://www.roblox.com/asset/?id=13784335227"
+		s.SkyboxUp = "http://www.roblox.com/asset/?id=13784335227"
+		s.Parent = game.Lighting
+		Spooky = Instance.new("Sound", game.Workspace)
+		Spooky.Name = "Spooky"
+		Spooky.SoundId = "rbxassetid://13784335227"
+		Spooky.Volume = 20
+                Spooky.Pitch = 0.5
+		Spooky.Looped = true
+		Spooky:Play()
+		local ID =15032057838 --id here
+		function spamDecal(v)
+			if v:IsA("Part") then
+				for i=0, 5 do
+					D = Instance.new("Decal")
+					D.Name = "K00PHACK"
+					D.Face = i
+					D.Parent = v
+					D.Texture = ("http://www.roblox.com/asset/?id="..Id)
+				end
+			else
+				if v:IsA("Model") then
+					for a,b in pairs(v:GetChildren()) do
+						spamDecal(b)
+					end
+				end
 			end
 		end
-	end
-end
-function decalspam(id) --use this function, not the one on top
-	Id = id
-	for i,v in pairs(game.Workspace:GetChildren()) do
-		if v:IsA("Part") then
-		for i=0, 5 do
-			D = Instance.new("Decal")
-			D.Name = "MYDECALHUE"
-			D.Face = i
-			D.Parent = v
-			D.Texture = ("http://www.roblox.com/asset/?id="..id)
-		end
-	else
-		if v:IsA("Model") then
-			for a,b in pairs(v:GetChildren()) do
-				spamDecal(b)
+		function decalspam(id) --use this function, not the one on top
+			Id = id
+			for i,v in pairs(game.Workspace:GetChildren()) do
+				if v:IsA("Part") then
+					for i=0, 5 do
+						D = Instance.new("Decal")
+						D.Name = "MYDECALHUE"
+						D.Face = i
+						D.Parent = v
+						D.Texture = ("http://www.roblox.com/asset/?id="..id)
+					end
+				else
+					if v:IsA("Model") then
+						for a,b in pairs(v:GetChildren()) do
+							spamDecal(b)
+						end
+					end
+				end
 			end
 		end
-	end
-end
-end
+	
+		decalspam(ID)
 
-decalspam(ID)
+	wait(1)
 end)
+
 e2006Theme.Name = "e2006Theme"
 e2006Theme.Parent = Frame
 e2006Theme.BackgroundColor3 = Color3.new(0.392157, 0.392157, 0.392157)
