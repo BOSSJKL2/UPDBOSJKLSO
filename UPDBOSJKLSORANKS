@@ -558,7 +558,7 @@ Disc0.MouseButton1Down:connect(function()
 
 		Spooky = Instance.new("Sound", game.Workspace)
 		Spooky.Name = "Spooky"
-		Spooky.SoundId = "rbxassetid://6680495507"
+		Spooky.SoundId = "rbxassetid://6783714255"
 		Spooky.Volume = 5
                 Spooky.Pitch = 0.7
 		Spooky.Looped = false
