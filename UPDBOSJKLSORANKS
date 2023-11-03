@@ -546,7 +546,7 @@ Disc0.TextWrapped = true
 Disc0.MouseButton1Down:connect(function()
      --made by me
 
-loadstring(game:HttpGet("https://pastebin.com/raw/U9SFjNiq"))()
+
 
 end)
 e2006Theme.Name = "e2006Theme"
