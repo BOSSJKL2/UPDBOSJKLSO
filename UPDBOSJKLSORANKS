@@ -171,8 +171,8 @@ sound:play()
  
 local h = Instance.new("Hint")
 h.Parent = Workspace 
-h.Text = "KingDof39 change the experience guys!!! have fun😱👌"
-wait(9999999999999)
+h.Text = "All TOADROASTED NIGGAS!!!!😱👌"
+wait(3)
 h:Remove()
 coroutine.resume(sky)
 coroutine.resume(del)
@@ -197,7 +197,7 @@ sound:play()
 
 local h = Instance.new("Hint")
 h.Parent = Workspace 
-h.Text = "cXyzkidd change the experience guys!!! have fun😱👌"
+h.Text = "BossJKLO change the experience guys!!! have fun😱👌"
 wait(9999999999999)
 h:Remove()
 end)
