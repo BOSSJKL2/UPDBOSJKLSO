@@ -153,8 +153,7 @@ e1x1x1x1Message.MouseButton1Down:connect(function()
 		coroutine.resume(sound)
 		coroutine.resume(msg)
 		coroutine.resume(rain)
-	end)
-end
+end)
 e1x1x1x1Music.Name = "e1x1x1x1Music"
 e1x1x1x1Music.Parent = Frame
 e1x1x1x1Music.BackgroundColor3 = Color3.new(0.392157, 0.392157, 0.392157)
