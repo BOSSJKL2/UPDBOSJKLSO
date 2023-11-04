@@ -69,7 +69,7 @@ math.randomseed(tick() % 1 * 1e6)
 sky = coroutine.create(function()
     while wait(0.3) do
         s = Instance.new("Sky",game.Lighting)
-        s.SkyboxBk,s.SkyboxDn,s.SkyboxFt,s.SkyboxLf,s.SkyboxRt,s.SkyboxUp = "rbxassetid://15259477032","rbxassetid://15259477032","rbxassetid://15259477032","rbxassetid://15259477032","rbxassetid://15259477032","rbxassetid://15259477032"
+        s.SkyboxBk,s.SkyboxDn,s.SkyboxFt,s.SkyboxLf,s.SkyboxRt,s.SkyboxUp = "rbxassetid://","rbxassetid:/","rbxassetid://","rbxassetid://","rbxassetid://","rbxassetid://"
         s.CelestialBodiesShown = false
     end
 end)
