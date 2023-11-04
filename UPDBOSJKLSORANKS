@@ -256,16 +256,11 @@ e1x1x1x1Laugh.TextWrapped = true
 e1x1x1x1Laugh.MouseButton1Down:connect(function()
 	--Made by Servano
 
- local H = Instance.new("Hint", game.Workspace)
-H.Parent = game.Workspace
-H.Text = ("JKLO TEAM join today!")
+ local hi = Instance.new("Hint", game.Workspace)
+hi.Parent = game.Workspace
+hi.Text = ("JKLO TEAM join today!")
 wait(5)
 
-local music = Instance.new("Sound", game.Workspace)
-music.SoundId = "rbxassetid://1847661783"
-music.Volume = 99999999999999999999999999999999999999999
-music.Looped = false
-music:Play()
 end)
 DayToNight.Name = "DayToNight"
 DayToNight.Parent = Frame
