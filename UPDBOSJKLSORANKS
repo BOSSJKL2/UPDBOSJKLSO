@@ -265,8 +265,6 @@ e1x1x1x1Laugh.MouseButton1Down:connect(function()
 	
 		Counter = 0
 	
-		Lighting.TimeOfDay = "19:00"
-	
 		while wait(0.1) do 
 			ColorCorrection.TintColor = Color3.fromHSV(zigzag(Counter),1,1)
 			Lighting.Ambient = Color3.fromHSV(zigzag(Counter),1,1)
