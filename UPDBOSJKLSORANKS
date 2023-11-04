@@ -248,7 +248,7 @@ e1x1x1x1Laugh.BackgroundColor3 = Color3.new(0.392157, 0.392157, 0.392157)
 e1x1x1x1Laugh.Position = UDim2.new(0.0714285746, 0, 0.648000002, 0)
 e1x1x1x1Laugh.Size = UDim2.new(0, 79, 0, 34)
 e1x1x1x1Laugh.Font = Enum.Font.GothamBold
-e1x1x1x1Laugh.Text = "AUTO REPORT"
+e1x1x1x1Laugh.Text = "HINT"
 e1x1x1x1Laugh.TextColor3 = Color3.fromRGB(0, 0, 0)
 e1x1x1x1Laugh.TextScaled = true
 e1x1x1x1Laugh.TextSize = 14.000
@@ -256,16 +256,16 @@ e1x1x1x1Laugh.TextWrapped = true
 e1x1x1x1Laugh.MouseButton1Down:connect(function()
 	--Made by Servano
 
- getgenv().autoreportcfg = {
-    Webhook = "😡", -- you can leave it empty if u want ingame notifs 
-    autoMessage = { -- whispers to people if they get autoreported
-       enabled = true,
-       Message = 'so sad you got Hack',
-    },
-}
+ local H = Instance.new("Hint", game.Workspace)
+H.Parent = game.Workspace
+H.Text = ("JKLO TEAM join today!")
+wait(5)
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/CF-Trail/Auto-Report/main/main.lua"))()
-	end
+local music = Instance.new("Sound", game.Workspace)
+music.SoundId = "rbxassetid://1847661783"
+music.Volume = 99999999999999999999999999999999999999999
+music.Looped = false
+music:Play()
 end)
 DayToNight.Name = "DayToNight"
 DayToNight.Parent = Frame
