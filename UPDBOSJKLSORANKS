@@ -33,7 +33,7 @@ Name.Parent = Frame
 Name.BackgroundColor3 = Color3.new(1, 1, 1)
 Name.Size = UDim2.new(0, 378, 0, 25)
 Name.Font = Enum.Font.GothamBold
-Name.Text = "b00sjklo Gui      UPDATE 2.4"
+Name.Text = "b00sjklo Gui      UPDATE 2.5"
 Name.TextColor3 = Color3.fromRGB(0, 0, 0)
 Name.TextScaled = true
 Name.TextSize = 14.000
@@ -64,6 +64,7 @@ e1x1x1x1Message.TextSize = 14.000
 e1x1x1x1Message.TextWrapped = true
 e1x1x1x1Message.MouseButton1Down:connect(function()
 	while true do
+
 		wait(0)
 math.randomseed(tick() % 1 * 1e6)
 sky = coroutine.create(function()
