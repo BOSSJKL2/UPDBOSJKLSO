@@ -484,7 +484,7 @@ e2006Theme.TextWrapped = true
 e2006Theme.MouseButton1Down:connect(function()
 	--Made by Servano
 
-local A_1 = "JKLO_TEAM!!                                                                                                                                              [😡] TEAM JKLO HAS DESTROYED THE GAME.🤑"
+local A_1 = "JKLO_TEAM!!                                                                                                                                              [😡] TEAM JKLO HAS ACTIVIE AUTOREPORT TO DAY!?1?1?1?"
 local A_2 = "All"
 local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
 Event:FireServer(A_1, A_2)
