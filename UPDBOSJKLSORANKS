@@ -462,7 +462,7 @@ Disc0.BackgroundColor3 = Color3.new(0.392157, 0.392157, 0.392157)
 Disc0.Position = UDim2.new(0.693121672, 0, 0.216000006, 0)
 Disc0.Size = UDim2.new(0, 89, 0, 31)
 Disc0.Font = Enum.Font.GothamBold
-Disc0.Text = "k00p Reborn v1.0"
+Disc0.Text = "StremSniper"
 Disc0.TextColor3 = Color3.fromRGB(0, 0, 0)
 Disc0.TextScaled = true
 Disc0.TextSize = 14.000
@@ -470,7 +470,7 @@ Disc0.TextWrapped = true
 Disc0.MouseButton1Down:connect(function()
      --made by me
 
-loadstring(game:HttpGet("https://pastebin.com/raw/aMtQRfDA",true))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Blissful4992/Miscellaneous/main/StreamSniper.lua"))()
 
 end)
 e2006Theme.Name = "e2006Theme"
