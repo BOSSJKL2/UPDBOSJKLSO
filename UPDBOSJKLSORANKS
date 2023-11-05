@@ -57,105 +57,14 @@ e1x1x1x1Message.BackgroundColor3 = Color3.new(0.392157, 0.392157, 0.392157)
 e1x1x1x1Message.Position = UDim2.new(0.0714285746, 0, 0.216000006, 0)
 e1x1x1x1Message.Size = UDim2.new(0, 79, 0, 31)
 e1x1x1x1Message.Font = Enum.Font.GothamBold
-e1x1x1x1Message.Text = "RESET MAP"
+e1x1x1x1Message.Text = "AUTOREPORT"
 e1x1x1x1Message.TextColor3 = Color3.fromRGB(0, 0, 0)
 e1x1x1x1Message.TextScaled = true
 e1x1x1x1Message.TextSize = 14.000
 e1x1x1x1Message.TextWrapped = true
 e1x1x1x1Message.MouseButton1Down:connect(function()
 	while true do
-		wait(0)
- 
-del = coroutine.create(function()
-    while wait(0.3) do
-        for i,v in pairs(workspace:GetChildren()) do
-            if v:IsA("Model") then
-                v:Destroy()
-            end
-        end
-    end
-end)
- 
- 
- 
-for i,v in pairs(game.Players:GetChildren()) do
-end
- 
-noises = {'rbxassetid://','rbxassetid://','rbxassetid://','rbxassetid://'}
- 
-sound = coroutine.create(function()
-    a = Instance.new("Sound",workspace)
-    a.SoundId = "rbxassetid://141509625"
-    a.Name = "RAINING HOOD404"
-    a.Volume = 58359
-    a.Looped = true
-    a:Play()
-    while wait(0.2) do
-        rainin = workspace:FindFirstChild("RAINING MEN")
-        if not rainin then
-            a = Instance.new("Sound",workspace)
-            a.SoundId = "rbxassetid://9007859985"
-            a.Name = "RAINING HOOD404"
-            a.Volume = 58359
-            a.Looped = true
-            a:Play()
-        end
-    end
-end)
-
- 
- 
-rain = coroutine.create(function()
-    while wait(10 % 1 * 1e2) do
-        part = Instance.new("Part",workspace)
-        part.Name = "Meshes/toad (3)"
- 
-        mesh = Instance.new("SpecialMesh",part)
- 
-        sound = Instance.new("Sound",workspace)
- 
-        part.CanCollide = false
-        part.Size = Vector3.new(440,530,380)
-        part.Position = Vector3.new(math.random(-3000,1000),math.random(1,3000),math.random(-3000,3000))
- 
-        sound.SoundId = noises[math.random(1,#noises)]
-        sound:Play()
-        sound.Ended:connect(function()
-            sound:Destroy()
-        end)
- 
- 
-        mesh.MeshType = "FileMesh"
-        mesh.MeshId = "rbxassetid://7234998844"
-        mesh.TextureId = "rbxassetid://1009824086"
-    end
-end)
-coroutine.resume(sky)
-coroutine.resume(del)
-coroutine.resume(sound)
-coroutine.resume(msg)
-coroutine.resume(rain)
- 
-local sound = Instance.new("Sound")
- 
-sound.Name = "HOOD404"
-sound.SoundId = "http://www.roblox.com/asset/?id=1839246711" --Song
-sound.Volume = .9999999999999999999999999999999999999999999999999999999999999999999 --Derp (I have good, loud speakers. You may need to change this.)
-sound.Pitch = 1 --Speed of Playback
-sound.Looped = true
-sound.archivable = false
- 
-sound.Parent = game.Workspace
- 
-wait(0)
- 
-sound:play()
- 
-local h = Instance.new("Hint")
-h.Parent = Workspace 
-h.Text = "All Toadroadsted NIGGAS!!!"
-wait(9999999999999)
-h:Remove()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/CF-Trail/Auto-Report/main/revamp.lua'))()
 	end
 end)
 e1x1x1x1Music.Name = "e1x1x1x1Music"
