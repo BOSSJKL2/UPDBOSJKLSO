@@ -8,6 +8,7 @@ local Frame = Instance.new("Frame")
 local Name = Instance.new("TextLabel")
 local Credits = Instance.new("TextLabel")
 local e1x1x1x1Message = Instance.new("TextButton")
+local closebutton = Instance.new("TextButton")
 local e1x1x1x1Music = Instance.new("TextButton")
 local e1x1x1x1Laugh = Instance.new("TextButton")
 local DayToNight = Instance.new("TextButton")
@@ -67,6 +68,17 @@ e1x1x1x1Message.MouseButton1Down:connect(function()
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/CF-Trail/Auto-Report/main/revamp.lua'))()
 wait(1)
     end
+end)
+closebutton = Instance.new("TextButton",frame)
+closebutton.Size = UDim2.new(0.15,0,0.25,0)
+closebutton.AnchorPoint = Vector2.new(1,0)
+closebutton.TextScaled = true
+closebutton.BackgroundColor3 = Color3.new(1, 0, 0.0156863)
+closebutton.Text = "X"
+closebutton.Position = UDim2.new(1,0,0,0)
+closebutton.TextColor3 = Color3.new(1, 1, 1)
+closebutton.MouseButton1Up:Connect(function()
+ ScreenGui:Destroy()
 end)
 e1x1x1x1Music.Name = "e1x1x1x1Music"
 e1x1x1x1Music.Parent = Frame
