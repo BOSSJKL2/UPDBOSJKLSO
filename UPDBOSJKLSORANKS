@@ -558,17 +558,5 @@ local function QFCS_fake_script() -- Frame.Dragify
 	
 	dragify(script.Parent)
 end
-local script = Instance.new('LocalScript')
-	script.Parent = Frame
-	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
- 
-	counter = 0
- 
-	while wait(0.1)do
-	 script.Parent.BackgroundColor3 = Color3.fromHSV(zigzag(counter),1,1)
- 
-	 counter = counter + 0.01
-	end
- 
-end
+
 coroutine.wrap(QFCS_fake_script)()
