@@ -54,7 +54,6 @@ Credits.MouseButton1Down:connect(function()
 ScreenGui:Destroy()
 wait(2.5)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/BOSSJKL2/PAGE-2/main/PAGE%202%20GUI"))()
-     end
 end)
 
 AR.Name = "autoreport"
@@ -71,7 +70,6 @@ AR.TextWrapped = true
 AR.MouseButton1Down:connect(function()
 	while true do
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/CF-Trail/Auto-Report/main/revamp.lua'))()
-         end
 wait(1)
     end
 end)
