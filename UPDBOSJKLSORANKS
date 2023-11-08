@@ -51,9 +51,9 @@ Credits.TextScaled = true
 Credits.TextSize = 14.000
 Credits.TextWrapped = true
 Credits.MouseButton1Down:connect(function()
-ScreenGui:Destroy()
-wait(0.5)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/BOSSJKL2/PAGE-2/main/PAGE%202%20GUI"))()
+wait(0.2)
+ScreenGui:Destroy()
 end)
 
 AR.Name = "autoreport"
