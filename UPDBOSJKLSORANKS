@@ -52,7 +52,6 @@ Name.TextSize = 14.000
 Name.TextWrapped = true
 Name.MouseButton1Down:connect(function()
 if Credits.Text == "BOSSJKLOHAX2.6" then
-		Frame.Visible = false
 		wait(0.5)
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/BOSSJKL2/EPIC-ONLY/main/EPIC%20ONLy"))()
 	end
