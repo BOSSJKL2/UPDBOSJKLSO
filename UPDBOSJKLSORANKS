@@ -101,7 +101,7 @@ DS.MouseButton1Down:connect(function()
 		s.SkyboxRt = "http://www.roblox.com/Asset/?id=15396294306"
                 s.SkyboxUp = "http://www.roblox.com/Asset/?id=15396294306"
                 s.Parent = game.Lighting
-		local ID =15032057838 --id here
+		local ID =15396294306 --id here
 		function spamDecal(v)
 	if v:IsA("Part") then
 				for i=0, 5 do
