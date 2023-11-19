@@ -83,7 +83,7 @@ DS.BackgroundColor3 = Color3.new(0.392157, 0.392157, 0.392157)
 DS.Position = UDim2.new(0.0714285746, 0, 0.436000019, 0)
 DS.Size = UDim2.new(0, 79, 0, 31)
 DS.Font = Enum.Font.GothamBold
-DS.Text = "DecalSpam"
+DS.Text = "JO1TAR0 DecalSpam"
 DS.TextColor3 = Color3.fromRGB(0, 0, 0)
 DS.TextScaled = true
 DS.TextSize = 14.000
@@ -94,12 +94,12 @@ DS.MouseButton1Down:connect(function()
 	
 		s = Instance.new("Sky")
 		s.Name = "SKY"
-		s.SkyboxBk = "http://www.roblox.com/Asset/?id=15032057838"
-		s.SkyboxDn = "http://www.roblox.com/Asset/?id=15032057838"
-		s.SkyboxFt = "http://www.roblox.com/Asset/?id=15032057838"
-		s.SkyboxLf = "http://www.roblox.com/Asset/?id=15032057838"
-		s.SkyboxRt = "http://www.roblox.com/Asset/?id=15032057838"
-                s.SkyboxUp = "http://www.roblox.com/Asset/?id=15032057838"
+		s.SkyboxBk = "http://www.roblox.com/Asset/?id=15396294306"
+		s.SkyboxDn = "http://www.roblox.com/Asset/?id=15396294306"
+		s.SkyboxFt = "http://www.roblox.com/Asset/?id=15396294306"
+		s.SkyboxLf = "http://www.roblox.com/Asset/?id=15396294306"
+		s.SkyboxRt = "http://www.roblox.com/Asset/?id=15396294306"
+                s.SkyboxUp = "http://www.roblox.com/Asset/?id=15396294306"
                 s.Parent = game.Lighting
 		local ID =15032057838 --id here
 		function spamDecal(v)
