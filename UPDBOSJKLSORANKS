@@ -22,6 +22,7 @@ local DayToNights = Instance.new("TextButton")
 local daytonights = Instance.new("TextButton")
 local e666 = Instance.new("TextButton")
 local a666 = Instance.new("TextButton")
+local f666 = Instance.new("TextButton")
 local EpicSaxGuy = Instance.new("TextButton")
 local EpicSaxGuys = Instance.new("TextButton")
 local Disc0 = Instance.new("TextButton")
@@ -109,13 +110,14 @@ EpicSaxGuy.Visible = true
 e666.Visible = true
 wait(0.2)
 end)
+local upd = 2.73
 Name.Name = "Name"
 Name.Parent = Frame
 Name.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 Name.BackgroundTransparency = 1.000
 Name.Size = UDim2.new(0, 378, 0, 25)
 Name.Font = Enum.Font.GothamBold
-Name.Text = "b00sjkidd gui👑2.72"
+Name.Text = "b00sjkidd gui👑"..upd
 Name.TextColor3 = Color3.fromRGB(0, 0, 0)
 Name.TextScaled = true
 Name.TextSize = 14.000
@@ -153,13 +155,13 @@ DS.BorderSizePixel = 3
 DS.Position = UDim2.new(0.0714285746, 0, 0.436000019, 0)
 DS.Size = UDim2.new(0, 79, 0, 31)
 DS.Font = Enum.Font.GothamBold
-DS.Text = "k00pkiddify"
+DS.Text = "realify"
 DS.TextColor3 = Color3.fromRGB(0, 0, 0)
 DS.TextScaled = true
 DS.TextSize = 14.000
 DS.TextWrapped = true
 DS.MouseButton1Down:connect(function()
-local ID = 11379488396
+local ID = 15630705973
 local particle = true
 
 -- Don’t change anything down below if you don’t know what are you doing [This script made by cXyzkidd]
@@ -188,11 +190,11 @@ if particle == true then
 end
 wait()
 sky = Instance.new("Sky",game:GetService("Lighting"))
-sky.SkyboxBk = "http://www.roblox.com/asset/?id=11379488396"
-sky.SkyboxFt = "http://www.roblox.com/asset/?id=11379488396"
-sky.SkyboxLf = "http://www.roblox.com/asset/?id=11379488396"
-sky.SkyboxRt = "http://www.roblox.com/asset/?id=11379488396"
-sky.SkyboxUp = "http://www.roblox.com/asset/?id=11379488396"
+sky.SkyboxBk = "http://www.roblox.com/asset/?id=15630705973"
+sky.SkyboxFt = "http://www.roblox.com/asset/?id=15630705973"
+sky.SkyboxLf = "http://www.roblox.com/asset/?id=15630705973"
+sky.SkyboxRt = "http://www.roblox.com/asset/?id=15630705973"
+sky.SkyboxUp = "http://www.roblox.com/asset/?id=15630705973"
 wait()
 local ID = 11379488396 --id here
 function spamDecal(v)
@@ -519,19 +521,17 @@ e1x1x1x1laughs.Visible = false
 e1x1x1x1laughs.Position = UDim2.new(0.0714285746, 0, 0.648000002, 0)
 e1x1x1x1laughs.Size = UDim2.new(0, 79, 0, 34)
 e1x1x1x1laughs.Font = Enum.Font.GothamBold
-e1x1x1x1laughs.Text = "KEVIN MACLEOD AUDIO"
+e1x1x1x1laughs.Text = "STOP"
 e1x1x1x1laughs.TextColor3 = Color3.fromRGB(0, 0, 0)
 e1x1x1x1laughs.TextScaled = true
 e1x1x1x1laughs.TextSize = 14.000
 e1x1x1x1laughs.TextWrapped = true
 e1x1x1x1laughs.MouseButton1Down:connect(function()
-Spooky = Instance.new("Sound", game.Workspace)
-		Spooky.Name = "Spooky"
-		Spooky.SoundId = "rbxassetid://58479849"
-		Spooky.Volume = 6e9
-                Spooky.Pitch = 1.1
-		Spooky.Looped = true
-		Spooky:Play()
+    for i,v in pairs(workspace:GetDescendants()) do
+        if v:IsA("Sound") then
+            v.Playing = false
+        end
+    end
 end)
 DayToNight.Name = "DayToNight"
 DayToNight.Parent = Frame
@@ -966,6 +966,23 @@ EpicSaxGuy.Visible = true
 e666.Visible = true
 wait(0.2)
 end)
+f666.Name = "e666"
+f666.Parent = Frame
+f666.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+f666.BorderColor3 = Color3.fromRGB(255, 255, 255)
+f666.BorderSizePixel = 3
+f666.Visible = false
+f666.Position = UDim2.new(0.388888896, 0, 0.43599999, 0)
+f666.Size = UDim2.new(0, 83, 0, 31)
+f666.Font = Enum.Font.GothamBold
+f666.Text = "NEXT"
+f666.TextColor3 = Color3.fromRGB(0, 0, 0)
+f666.TextScaled = true
+f666.TextSize = 14.000
+f666.TextWrapped = true
+f666.MouseButton1Down:connect(function()
+
+end)
 EpicSaxGuy.Name = "EpicSaxGuy"
 EpicSaxGuy.Parent = Frame
 EpicSaxGuy.BackgroundColor3 = Color3.new(0.392157, 0.392157, 0.392157)
@@ -1014,23 +1031,26 @@ EpicSaxGuys.Visible = false
 EpicSaxGuys.Position = UDim2.new(0.388888896, 0, 0.648000002, 0)
 EpicSaxGuys.Size = UDim2.new(0, 83, 0, 34)
 EpicSaxGuys.Font = Enum.Font.GothamBold
-EpicSaxGuys.Text = "FIRE RAININING"
+EpicSaxGuys.Text = "TROLL"
 EpicSaxGuys.TextColor3 = Color3.new(0, 0, 0)
 EpicSaxGuys.TextScaled = true
 EpicSaxGuys.TextSize = 14.000
 EpicSaxGuys.TextWrapped = true
-EpicSaxGuys.MouseButton1Down:connect(function()		
-while true do
-		part = Instance.new("Part")
-		part.Position =  Vector3.new(math.random(-500,500),math.random(1,500),math.random(-500,500))
-		part.Parent = game.Workspace
-		part.BrickColor = BrickColor.new("green")
-		fire = Instance.new("Fire")
-		fire.Size = 75
-		fire.Parent = part
-        part.Anchored = false
-        wait(0.5)
-	end
+EpicSaxGuys.MouseButton1Down:connect(function()
+wait(0.1)
+gui1 = Instance.new("BillboardGui")
+gui1.Parent = game.Workspace.Tubers93HKRB.Head
+gui1.Adornee = game.Workspace.Tubers93HKRB.Head
+gui1.Size = UDim2.new(2.5,0,2.5,0)
+gui1.StudsOffset = Vector3.new(0,0,0)
+gui1.AlwaysOnTop = true
+text1 = Instance.new("ImageLabel")
+text1.Image = "http://www.roblox.com/asset/?id=45120559"
+text1.Size = UDim2.new(1,0,1,0)
+text1.Position = UDim2.new(0,0,0,0)
+text1.BackgroundTransparency = 1
+text1.Parent = gui1
+wait()
 end)
 Disc0.Name = "Disc0"
 Disc0.Parent = Frame
